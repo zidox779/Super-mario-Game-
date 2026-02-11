@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Mario Style Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- قائمة البداية -->
+<div id="startMenu">
+  <h1>🎮 مرحباً بك في اللعبة!</h1>
+  <button id="startBtn">ابدأ اللعب</button>
+</div>
+
+<div id="hud">
+  <span id="level">🌍 المرحلة: 1</span>
+  <span id="lives">❤️ 3</span>
+</div>
+
+<div id="viewport">
+  <div id="world">
+
+    <!-- صورة الشخصية -->
+    <img id="player" src="https://i.postimg.cc/7Y5M9dpS/Pngtree-transparent-image-christmas-santa-claus-19411778.png" alt="player">
+
+    <div id="ground"></div>
+    <div id="flag">🏁</div>
+    <div class="enemy"></div>
+
+  </div>
+</div>
+
+<div id="controls">
+  <button id="left">⬅️</button>
+  <button id="jump">⬆️</button>
+  <button id="right">➡️</button>
+</div>
+
+<!-- أصوات -->
+<audio id="jumpSound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
+<audio id="hitSound" src="https://www.soundjay.com/buttons/sounds/button-10.mp3"></audio>
+<audio id="deadSound" src="https://www.soundjay.com/buttons/sounds/button-09.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
