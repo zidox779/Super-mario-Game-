@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial;
+}
+
+/* قائمة البداية */
+#startMenu {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+#startMenu h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#startMenu button {
+  font-size: 24px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+/* HUD */
+#hud {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 20px;
+  z-index: 10;
+}
+
+/* الكاميرا والخلفية */
+#viewport {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url('https://i.postimg.cc/sXn794m8/Pngtree-game-mario-8932908.png');
+  background-size: cover;
+  background-position: 0 0;
+}
+
+/* العالم */
+#world {
+  position: absolute;
+  width: 3000px;
+  height: 100%;
+}
+
+/* الشخصية */
+#player {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 60px;
+  left: 100px;
+}
+
+/* الأرض */
+#ground {
+  position: absolute;
+  bottom: 0;
+  width: 3000px;
+  height: 60px;
+  background: linear-gradient(#2e7d32, #1b5e20);
+}
+
+/* العدو */
+.enemy {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 60px;
+  left: 700px;
+  background: linear-gradient(purple, black);
+  border-radius: 50%;
+}
+
+/* علم النهاية */
+#flag {
+  position: absolute;
+  bottom: 60px;
+  left: 2800px;
+  font-size: 40px;
+}
+
+/* أزرار الهاتف */
+#controls {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 10;
+}
+
+#controls button {
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 50%;
+}
